@@ -18,8 +18,10 @@ def index():
         if city:
             url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
             response = requests.get(url)
+            print(response)
             if response.status_code == 200:
                 data = response.json()
+                print(data)
                 weather = {
                     "city": data["name"],
                     "temperature": data["main"]["temp"],
