@@ -1,0 +1,18 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background: #f0f0f0;
+}
+
+input, button {
+    padding: 8px;
+    margin-top: 10px;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.error {
+    color: red;
+}
